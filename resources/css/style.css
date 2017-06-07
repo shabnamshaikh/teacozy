@@ -14,7 +14,8 @@ header {
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
-  z-index: 1;
+  opacity: 1;
+  background-color: black;
 }
 
 header nav {
@@ -32,36 +33,104 @@ nav a {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: Seashell;
-  height: 50px;
   padding-left: 10px;
-  flex-grow: 2;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .middlesection {
-  display: flex;
-  flex-direction: column;
   width: 1200px;
   height: 700px;
   background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 245px;
-  margin: 0 auto 0 auto;
+  padding-top: 69px;
+  margin: auto;
 
 }
 .middlecontent h2 {
   text-align: center;
   width: 100%
-  display: inline-block;
-  height: 20px;
-  margin-top: 10px;
+
 }
 
 .middlecontent {
   background-color: black;
-  height: 100px;
   color: seashell;
+  width: 100%;
+  margin: auto;
+}
+
+.lowermiddle {
+  width: 1000px;
+  margin: auto;
+  padding: 50px 0;
+
+}
+.lowermiddle img{
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+
+.lowermiddle span {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.teaitem {
+  padding: 10px;
+}
+
+.locations {
+  padding-top: 50px;
+  background-image: url("../images/locationsbk.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: auto;
+}
+
+.locations h2 {
+  justify-content: center;
+}
+
+.locationitem {
+  margin: 0 20px;
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  font-size: 20px;
+}
+
+.locationitem .address {
+  display: block;
+  padding: 10px;
+}
+
+.locationitem .address span {
+  display: block;
+  padding: 10px;
+}
+
+footer{
+  width: 100%;
+  margin: 20px;
+}
+
+.info {
+  height: 200px;
+  text-align: center;
+}
+
+.copyright {
+  text-align: left;
 }
